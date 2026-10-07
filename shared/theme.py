@@ -213,9 +213,9 @@ p, label, span, li {{ font-family:var(--body); }}
 /* widgets */
 div.stButton > button, div.stDownloadButton > button {{ border-radius:7px; font-weight:600; background:var(--card); border:1px solid #33414D; color:var(--text); }}
 div.stButton > button:hover, div.stDownloadButton > button:hover {{ border-color:var(--muted); color:#fff; }}
-button[kind="primary"], [data-testid="stBaseButton-primary"] {{ background:var(--text) !important; border-color:var(--text) !important; color:{p['bg']} !important; font-weight:700 !important; }}
-button[kind="primary"] p, [data-testid="stBaseButton-primary"] p {{ color:{p['bg']} !important; }}
-button[kind="primary"]:hover, [data-testid="stBaseButton-primary"]:hover {{ background:#fff !important; }}
+button[kind="primary"], [data-testid="stBaseButton-primary"], button[kind="primaryFormSubmit"], [data-testid="stBaseButton-primaryFormSubmit"] {{ background:var(--text) !important; border-color:var(--text) !important; color:{p['bg']} !important; font-weight:700 !important; }}
+button[kind="primary"] p, [data-testid="stBaseButton-primary"] p, button[kind="primaryFormSubmit"] p, [data-testid="stBaseButton-primaryFormSubmit"] p {{ color:{p['bg']} !important; }}
+button[kind="primary"]:hover, [data-testid="stBaseButton-primary"]:hover, button[kind="primaryFormSubmit"]:hover, [data-testid="stBaseButton-primaryFormSubmit"]:hover {{ background:#fff !important; }}
 [data-testid="stTabs"] [data-baseweb="tab-list"] {{ gap:.2rem; border-bottom:1px solid var(--line); }}
 [data-testid="stTabs"] [data-baseweb="tab"] {{ font-size:.97rem; font-weight:500; color:var(--muted); padding:.5rem .95rem; background:transparent; }}
 [data-testid="stTabs"] [aria-selected="true"] {{ color:var(--text); }}
